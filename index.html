@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>星落小镇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="top-bar">
+    <span id="gold-display">金币：0</span>
+    <span id="material-display">材料：-</span>
+</div>
+
+<div id="town-container"></div>
+
+<div id="menu">
+    <button data-action="synthesis">材料合成</button>
+    <button data-action="build">建筑建造</button>
+    <button data-action="notice">公告</button>
+    <button data-action="code">兑换码</button>
+    <button data-action="setting">设置</button>
+</div>
+
+<div id="popup-mask">
+    <div id="popup"></div>
+</div>
+
+<script src="js/core-config.js"></script>
+<script src="js/core-state.js"></script>
+<script src="js/core-events.js"></script>
+<script src="js/ui-main.js"></script>
+<script src="js/system-material.js"></script>
+<script src="js/system-building.js"></script>
+<script src="js/system-code.js"></script>
+<script src="js/system-notice.js"></script>
+<script src="js/system-setting.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
