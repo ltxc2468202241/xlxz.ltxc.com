@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background: #f5f0e6;
+    font-family: "微软雅黑";
+}
+
+#top-bar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#town-container {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #d9cbb0;
+    position: relative;
+    overflow: hidden;
+}
+
+.tile {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.building {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 12px;
+}
+
+#menu {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#menu button {
+    margin: 5px;
+    padding: 8px 16px;
+}
+
+#popup-mask {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup {
+    background: #fff;
+    min-width: 280px;
+    max-width: 480px;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 16px;
+    border-radius: 8px;
+}
